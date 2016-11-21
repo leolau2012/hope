@@ -62,7 +62,7 @@ gulp.task('alljs', function () {
         .pipe(rev.manifest())
         .pipe(gulp.dest('rev/js'));;
 });
-//这里获取不到 文件
+//这里获取不到文件 这个任务失败……如果换成src会覆盖上面的css任务
 gulp.task('revjs', function () {
     gulp.src(['./rev/js/*.json', './build/*.html'])   //- 读取 rev-manifest.json 文件以及需要进行css名替换的文件
         .pipe(revCollector())                                   //- 执行文件内css名的替换
