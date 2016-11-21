@@ -1,0 +1,7 @@
+{
+    "project" : "Gulp",     
+    "localserver" : {
+        "host" : "localhost",
+        "port" : "8081"
+    }
+}   
